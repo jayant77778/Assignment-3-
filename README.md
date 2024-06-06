@@ -43,7 +43,7 @@ ssh azureuser@<Linux_VM_IP_Address>
 ### Task:
 Create an App Service Plan, provision a web app in the existing plan, and deploy a simple welcome page.
 
-#### Create a new App Service Plan
+## 3. Create a new App Service Plan
 ```sh
 az appservice plan create --name MyAppServicePlan --resource-group MyResourceGroup --sku FREE
 ```
@@ -58,7 +58,7 @@ az webapp create --resource-group MyResourceGroup --plan MyAppServicePlan --name
 az webapp up --name MyUniqueAppName --resource-group MyResourceGroup --html
 ```
 
-## 3. Create Azure Container Registry (ACR) and Pull Image
+## 4. Create Azure Container Registry (ACR) and Pull Image
 
 ### Task:
 Create an Azure Container Registry (ACR), push a Docker image to ACR, and create a container from it.
@@ -95,7 +95,7 @@ Create a container instance, deploy a simple Docker application, create containe
 az container create --resource-group MyResourceGroup --name mycontainer --image MyACR.azurecr.io/myapp:latest --cpu 1 --memory 1.5
 ```
 
-#### Deploy a Docker Application to the Container Instance
+#### 5. Deploy a Docker Application to the Container Instance
 ```sh
 az container create --resource-group MyResourceGroup --name mydockerapp --image mydockerapp:latest --cpu 1 --memory 1.5
 ```
@@ -110,7 +110,7 @@ az container create --resource-group MyResourceGroup --name mycontainergroup --i
 az container show --resource-group MyResourceGroup --name mycontainer --query instanceView.state
 ```
 
-## Screenshots
+## Screenshots(answers)
 
 ![Screenshot 1](https://github.com/jayant77778/Assignment-3-/blob/main/Screenshot%202024-06-06%20202631.jpg)
 ![Screenshot 2](https://github.com/jayant77778/Assignment-3-/blob/main/Screenshot%202024-06-06%20225333.jpg)
