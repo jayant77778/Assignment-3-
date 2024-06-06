@@ -25,6 +25,50 @@ https://github.com/jayant77778/Assignment-3-/blob/main/Screenshot%202024-06-07%2
 
 
 ## 2. Deploy Linux and Windows Virtual Machines
+3. Create an App Service Plan
+Task:
+Create an App Service Plan, provision a web app in the existing plan, and deploy a simple welcome page.
+
+Steps:
+Create a new App Service Plan.
+Provision a Web App within the App Service Plan.
+Deploy a simple HTML welcome page to the Web App.
+Resources:
+Virtual Networks Overview
+Screenshot:
+
+4. Create Azure Container Registry (ACR) and Pull Image
+Task:
+Create an Azure Container Registry (ACR), pull an image from ACR, and create a container from it.
+
+Steps:
+Create a new Azure Container Registry (ACR).
+Push a Docker image to the ACR.
+Pull the Docker image from the ACR.
+sh
+Copy code
+docker pull <ACR_Username>.azurecr.io/<Image_Name>:<Tag>
+Create a container from the pulled image.
+Resources:
+Virtual Networks Overview
+Screenshot:
+
+5. Create Container Instance
+Task:
+Create a container instance, deploy a simple Docker application, create container groups, and test functionality.
+
+Steps:
+Create a new container instance in Azure.
+Deploy a Docker application to the container instance.
+Create container groups for better organization and scaling.
+Test the functionality of the deployed application.
+Resources:
+Virtual Networks Overview
+Screenshot:
+
+Additional Information
+For detailed steps and code snippets used in each assignment, please refer to the respective resource links provided above.
+
 
 ### Task:
 Deploy both Linux and Windows virtual machines and access them using SSH and RDP.
