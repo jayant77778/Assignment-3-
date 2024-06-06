@@ -95,7 +95,7 @@ Create a container instance, deploy a simple Docker application, create containe
 az container create --resource-group MyResourceGroup --name mycontainer --image MyACR.azurecr.io/myapp:latest --cpu 1 --memory 1.5
 ```
 
-#### 5. Deploy a Docker Application to the Container Instance
+## 5. Deploy a Docker Application to the Container Instance
 ```sh
 az container create --resource-group MyResourceGroup --name mydockerapp --image mydockerapp:latest --cpu 1 --memory 1.5
 ```
