@@ -85,7 +85,7 @@ docker pull MyACR.azurecr.io/myapp:latest
 az container create --resource-group MyResourceGroup --name mycontainer --image MyACR.azurecr.io/myapp:latest --cpu 1 --memory 1.5 --registry-login-server MyACR.azurecr.io --registry-username <username> --registry-password <password>
 ```
 
-## 4. Create Container Instance
+## 5. Create Container Instance
 
 ### Task:
 Create a container instance, deploy a simple Docker application, create container groups, and test functionality.
@@ -95,7 +95,7 @@ Create a container instance, deploy a simple Docker application, create containe
 az container create --resource-group MyResourceGroup --name mycontainer --image MyACR.azurecr.io/myapp:latest --cpu 1 --memory 1.5
 ```
 
-## 5. Deploy a Docker Application to the Container Instance
+##  Deploy a Docker Application to the Container Instance
 ```sh
 az container create --resource-group MyResourceGroup --name mydockerapp --image mydockerapp:latest --cpu 1 --memory 1.5
 ```
