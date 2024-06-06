@@ -1,4 +1,4 @@
-# Azure Infrastructure Assignments
+# Assignment -3
 
 This repository contains solutions to various Azure infrastructure tasks. Each task involves creating and managing different Azure resources. Below is a detailed description of each assignment along with relevant screenshots.
 
