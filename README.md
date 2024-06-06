@@ -19,27 +19,28 @@ az network vnet subnet create --address-prefix 10.0.1.0/24 --name MySubnet --res
 Deploy virtual machines within the virtual network
 az vm create --resource-group MyResourceGroup --name MyVM --image UbuntuLTS --vnet-name MyVNet --subnet MySubnet --admin-username azureuser --generate-ssh-keys
 
-Steps:
+###Steps:
+
 Create a Linux virtual machine.
-sh
-Copy code
+
 az vm create --resource-group MyResourceGroup --name MyLinuxVM --image UbuntuLTS --admin-username azureuser --generate-ssh-keys
+
+
 Create a Windows virtual machine.
-sh
-Copy code
+
 az vm create --resource-group MyResourceGroup --name MyWindowsVM --image Win2019Datacenter --admin-username azureuser --admin-password myPassword123!
 Access the Linux VM using SSH.
-sh
-Copy code
+
 ssh azureuser@<Linux_VM_IP_Address>
+
 Access the Windows VM using RDP.
+
 Open Remote Desktop Connection.
 Enter the IP address of the Windows VM.
 Connect using your credentials.
-Screenshot:
 
 
-3. Create an App Service Plan
+###3. Create an App Service Plan
 Task:
 Create an App Service Plan, provision a web app in the existing plan, and deploy a simple welcome page.
 
